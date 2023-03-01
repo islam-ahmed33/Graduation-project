@@ -7,20 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up</title>
     <link rel="stylesheet" href="css/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
     <main>
-        <form>
-            <h2>Sign-up</h2>
-            <input type="text" class="usrname" name="username" placeholder="Username" required>
-            <input type="email" class="email" placeholder="Email" required>
-            <input type="password" class="password" placeholder="Password" required>
-            <input type="password" class="confirm-password" placeholder="Re-enter password" required>
-            <input type="submit" class="signup-btn" value="Submit">
-            <a class="link" href="./login.html">Already have an account?</a>
-        </form>
-          
+        <main>
+            <div class="container">
+                <div class="top">
+                    <header>Sign-up</header>
+                </div>
+                <div class="input-field">
+                    <input type="text" class="input" placeholder="Username" id="">
+                    <i class='bx bx-user'></i>
+                </div>
+                <div class="input-field">
+                    <input type="text" class="input" placeholder="E-mail" id="">
+                    <i class='bx bxl-gmail'></i>
+                </div>
+                <div class="input-field">
+                    <input type="Password" class="input" placeholder="Password" id="">
+                    <i class='bx bx-lock-alt'></i>
+                <div class="input-field">
+                    <input type="Password" class="input" placeholder="Re-Enter Password" id="">
+                    <i class='bx bx-lock-alt'></i>
+                </div>
+                <div class="input-field">
+                    <input type="submit" class="submit" value="Sign-up" id="">
+                </div>
+                <div class="log">
+                    <label><a href="./login.html">Already have an account?</a></label>
+                 </div>
+            </div>
     </main>
 </body>
 

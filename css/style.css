@@ -1,13 +1,24 @@
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost/Jost-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: Inter;
 }
 
-main {
+main {  
     width: 100%;
     height: 100%;
-    
+    font-family: Inter;
 
 }
 
@@ -46,16 +57,18 @@ nav ul li a {
 }
 
 .logo {
-   width: 300px;
-   text-align: center;
-   display: flex;
+    width: 300px;
+    text-align: center;
+    display: flex;
 }
-.logo img{
-    width: 50px;
+
+.logo img {
+    width: 70px;
 }
+
 .logo span {
     color: white;
-    font-size: 20px;
+    font-size: 1em;
     margin-left: 10px;
     text-align: center;
     line-height: 50px;
@@ -68,60 +81,63 @@ nav ul li a {
     width: 30px;
     height: 25px;
 } */
-.btns{
-    width:200px;
+.btns {
+    width: 200px;
 }
-.btns span:first-of-type a{
+
+.btns span:first-of-type a {
     text-decoration: none;
     color: #fff;
     border-radius: 20px;
     text-align: center;
     line-height: 50px;
     /*font-size: 20px;
-    */padding: 5px 10px;
+    */
+    padding: 3px 10px;
     border: #fff solid 2px;
     margin-right: 10px;
     box-sizing: border-box;
 }
-.btns span:last-of-type a{
+
+.btns span:last-of-type a {
     text-decoration: none;
     border-radius: 20px;
     text-align: center;
     line-height: 50px;
     margin-left: 10px;
-    padding: 5px 10px;
+    padding: 0 10px;
     color: #000;
     background: #fff;
-
+    border: #fff solid 5px;
 }
 
 header {
     width: 100%;
     height: 100vh;
     position: relative;
-    background: url(https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80) no-repeat center/cover fixed;
+    background: url(../images/bg.jpg) no-repeat center/cover fixed;
 }
 
 header-inner {
-   width: 30%;
-   position: absolute;
-   bottom: 60px;
-   left: 50px;
-   
+    width: 30%;
+    position: absolute;
+    bottom: 60px;
+    left: 50px;
+
 }
 
 header-inner h1 {
     color: #fff;
-    font-size:3em;
+    font-size: 2.5em;
     word-spacing: 2px;
     letter-spacing: 1.5px;
     box-sizing: border-box;
-    
+
 }
 
 header-inner h2 {
     color: #f90;
-    font-size:3em;
+    font-size: 2.5em;
     word-spacing: 2px;
     letter-spacing: 1.5px;
 }
@@ -132,9 +148,11 @@ header-inner .btn {
     border-radius: 20px;
     text-align: center;
     line-height: 30px;
-    font-size:2em;
+    font-size: 2em;
     margin: 10px;
     padding: 10px;
     color: #fff;
     background: #000;
+    border: #f90 solid 1px;
+    
 }
